@@ -28,17 +28,11 @@
         color: #700b7c;
     }
 
-    .navbar-inverse .navbar-nav > .dropdown > a:focus, .navbar-inverse .navbar-nav > .dropdown > .active a:focus{
-        background-color: #E7E7E7;
-    } 
-    .navbar-inverse .navbar-nav > .dropdown > .dropdown-menu > li > a, .navbar-inverse .navbar-nav > .dropdown > .dropdown-menu {
+    
+    .dropdown-menu{
         background-color: #E7E7E7;
         color: #700b7c;
     } 
-    .navbar-inverse .navbar-nav > .dropdown > .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav > .dropdown > .active .dropdown-menu > li > a:hover{
-        color: #700b7c;
-        background-color: white;
-    }
 
     .navbar-toggle{
         background-color:white;
@@ -49,6 +43,11 @@
         color: #262626;
         text-decoration: none;
         background-color: white;  /*change color of links in drop down here*/
+    }
+
+    .row .row-content{
+        min-height:100px;
+        max-height:200px;
     }
     </style>
 
@@ -75,8 +74,8 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#700b7c">
                         Projects <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#p1">Velo</a></li>
-                            <li><a href="#p2">Don't Tap Black Tile</a></li>
+                            <li><a href="project1.html">Velo</a></li>
+                            <li><a href="#">Don't Tap Black Tile</a></li>
                         </ul>
                     </li>
                     <li><a href="#footer" style="color:#700b7c">Contact</a></li>
@@ -85,16 +84,15 @@
         </div>
     </nav>
 
-    <header class="jumbotron" style="background:transparent url('img/profile2.jpg') no-repeat center center /cover">
+    <header class="jumbotron" style="background:transparent url('img/p2.jpg') no-repeat center center /cover">
 
         <!-- Main component for a primary marketing message or call to action -->
 
         <div class="container" >
             <div class = "row row-header">
                 <div class = "col-xs-12 col-sm-8">
-                    <h1 style="padding:80px 0px 0px 0px;">Zhaowen Zou</h1>
-                    <p style="padding:55px;"></p>
-                    <p>Zhaowen(Vera) Zou is a Master candidate in Computer Science at UC San Diego. She is looking for a software engineer internship in 2017 summer.</p>
+                    <h1 style="padding:80px 0px 0px 50px;">Don't Tap Black Tile</h1>
+                    <p style="padding:80px;"></p>
                 </div>
                 <div class = "col-xs-12 col-sm-4">
                 </div>
@@ -103,46 +101,34 @@
     </header>
 
     <div class = "container">
-        <div class = "row row-content" id="p1">
-            <div class="col-xs-12 col-sm-3 col-sm-push-9">
-                <p style="padding:20px;"></p>
-                <img src="img/velo.png" height="200px"></img>
-            </div>
-            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                <h2 style="padding:40px 0px 0px 0px;">Velo</h2>
-                <p>An intelligent biking system providing features of bike localization, real-time monitoring and braking light.</p>
-                <p><a href="./project1.html">More &#187;</a></p>
-            </div>
-        </div>
+        <div style="padding:80px;">
+        <h4 style="text-align:center;">An agile game similar to Don't Tap White Tile.</h4>
+    </div>
 
 
-        <div class = "row row-content" id="p2">
-            <div class="col-xs-12 col-sm-3 col-sm-push-9">
-                <div style="padding:40px;">
-                <img src="img/whitetile.png" height="150px"></img>
-            </div>
-            </div>
-            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                <h2>Don't Tap Black Tile</h2>
-                <p>Similar to the popular game Don't Tap the White Tile. Implemented using x86 assembly language.</p>
-                <p><a href="project2.html">More &#187;</a></p>
-            </div>
+        <div class="col-xs-12 col-sm-10 col-sm-push-1">
+        <div class = "row row-content">
+            <li>Used x86 assembly language.</li>
+            <li>Used BIOS and DOS interrupt to control the screen and time. Used DAC chip, programmable interval timers to control the speaker and programmable peripheral interface to control the Nixie tube.</li>
+            <li>Randomly generate white squares on screen and the player is required to press the corresponding key on the keyboard. If right, play a note in a melody and display time. If not, game over. When the melody is finished, the player finishes the game and display the time on screen.</li>
         </div>
+
+    </div>
 
     </div>
 
     <footer id="footer">
         <div class = "container">
             <div class = "row row-footer" style="background-color:white">          
-                <div class="col-xs-6 col-sm-5">
+                <div class="col-xs-6 col-sm-5 col-sm-push-1">
                     <h5 style="font-size:20px;">Contact Me</h5>
                     <address>
-                      <p style="font-size:15px;">
+		              <p style="font-size:15px;">
                         <br>
-                      Tel: +858 366 3183<br>
+		              Tel: +858 366 3183<br>
                       E-mail: zouvra@gmail.com
                     </p>
-                   </address>
+		           </address>
                 </div>
             </div>
         </div>
