@@ -2,20 +2,23 @@
 <html>
 <head>
 <style>
-#div1 { display: flex; width: 300px; background: green;}
-#button0 { width: 40px; background: white;}
-#button1 { flex: 1 1; display: block; width: 100px; background: white;}
-#button2 { width: 40px; background: white;}
+#root {direction: ltr; position: relative;}
+#div1 { display: flex; flex-direction: row;
+  position: relative; width: 300px; background: green;}
+#button0 { width: 40px; height: 30px; background: red;}
+#button1 { flex: 1 1 0%; height: 30px; min-width: 0; display: block; width: 100px; background: blue; overflow: hidden; text-align: center;}
+#button2 { width: 40px; height: 30px; background: yellow; align-items: center;}
 </style>
 </head>
 <body>
 
 
-
+<div id="root">
 <div id="div1">
-  <button id="button0">Hello</button>
-  <button id="button1">Hello</button>
-  <button id="button2">Goodbye</button>
+  <div id="button0">Hello</div>
+  <div id="button1">Helloooooooooo</div>
+  <div id="button2">Goodbye</div>
+</div>
 </div>
 
 </body>
