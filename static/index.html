@@ -2,9 +2,10 @@
 <html>
 <head>
 <style>
-#div1 { display: box; width: 300px; background: green;}
-#button1 { box-flex: 1.0; width: 100px; background: white;}
-#button2 { box-flex: 1.0; width: 140px; background: white;}
+#div1 { display: flex; width: 300px; background: green;}
+#button0 { width: 40px; background: white;}
+#button1 { flex: 1 1; display: block; width: 100px; background: white;}
+#button2 { width: 40px; background: white;}
 </style>
 </head>
 <body>
@@ -12,6 +13,7 @@
 
 
 <div id="div1">
+  <button id="button0">Hello</button>
   <button id="button1">Hello</button>
   <button id="button2">Goodbye</button>
 </div>
