@@ -3,11 +3,11 @@
 <head>
 <style>
 #root {direction: ltr; position: relative;}
-#div1 { display: flex; flex-direction: row;
-  position: relative; width: 100%; background: green;}
-#button0 { width: 40px; background: red; font-size: 20px;}
-#button1 { flex: 1 1 0%; min-width: 0; display: block; background: blue; overflow: hidden;}
-#button2 { width: 80px; background: yellow; align-items: center; display: flex; align-items: center; font-size: 20px;}
+/*#div1 { display: flex; flex-direction: row;
+  position: relative; width: 100%; background: green;}*/
+#button0 { width: 80px; height: 100px; background: red; font-size: 20px;}
+#button1 { flex: 1 1 0%; min-width: 0; display: block; background: blue; overflow: hidden; vertical-align: center;}
+#button2 { width: 80px; height: 100px; background: yellow; align-items: center; display: flex; align-items: center; font-size: 20px;}
 #test1 {
   font-size: 16px;}
 #test2 #test3 {
@@ -16,6 +16,31 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+#photo {
+    height: 64px;
+    width: 64px;
+}
+#action {
+    height: 30px;
+    width: 30px;
+}
+#profile {
+
+}
+#fillcolumn {
+    width:100%;
+    max-width: 0;
+    background: blue;
+}
+#column {
+    background: red;
+}
+#layout {
+    width: 100%;
+}
+#secondlabel {
+    overflow: hidden;
+}
 </style>
 </head>
 <body>
@@ -23,13 +48,35 @@
 
 <div id="root">
 <div id="div1">
-  <div id="button0">Hello</div>
-  <div id="button1">
-      <div id="test1">aaaaaaaaaaaaaaa</div>
-      <div id="test2">bbbbbbbbbbb</div>
-      <div id="test3"><span>cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc</span>></div>
-  </div>
-  <div id="button2"><div>Goodbye</div></div>
+  <table id="layout">
+      <tbody>
+          <tr>
+              <td id="column">
+                <div id="photo">aaaaa</div>
+              </td>
+              <td id="fillcolumn">
+                <div id="profile">
+                  <div>
+                      <text id="header">
+                        Hannah
+                      </text>
+                    </div>
+                    <div>
+                      <text id="firstlabel">
+                        bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+                      </text>
+                    </div>
+                    <div >
+                      <text id="secondlabel">
+                        ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+                      </text>
+                    </div>
+                </div>
+              </td>
+              <td id="column"><div id="action"></div></td>
+          </tr>
+      </tbody>
+  </table>
 </div>
 </div>
 
