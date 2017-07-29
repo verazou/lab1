@@ -6,8 +6,19 @@
 #div1 { display: flex; flex-direction: row;
   position: relative; width: 100%; background: green;}
 #button0 { width: 40px; height: 30px; background: red;}
-#button1 { flex: 1 1 0%; height: 30px; min-width: 0; display: block; background: blue; overflow: hidden; text-align: center;}
+#button1 { flex: 1 1 0%; min-width: 0; display: block; background: blue; overflow: hidden;
+flex-direction: column;
+  justify-content: center; display: flex;}
 #button2 { width: 40px; height: 30px; background: yellow; align-items: center; display: flex; align-items: center;}
+#test1 {align-items: center;
+  display: flex;
+  font-size: 16px;}
+#test2 #test3 {
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 </style>
 </head>
 <body>
@@ -16,7 +27,11 @@
 <div id="root">
 <div id="div1">
   <div id="button0">Hello</div>
-  <div id="button1">Helloooooooooo</div>
+  <div id="button1">
+      <div id="test1">aaaaaaaaaaaaaaa</div>
+      <div id="test2">bbbbbbbbbbb</div>
+      <div id="test3">cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc</div>
+  </div>
   <div id="button2"><div>Goodbye</div></div>
 </div>
 </div>
